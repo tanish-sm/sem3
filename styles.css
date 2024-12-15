@@ -1,0 +1,112 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF4E6;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFE8D6;
+}
+
+header a {
+    text-decoration: none;
+    color: #5c8f8f;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #FF8C75;
+}
+
+h1, h2, h5 {
+    color: #5c8f8f;
+}
+
+p {
+    color: #333333;
+}
+
+button {
+    background-color: #FF8C75;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #66B2B2;
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background-color: #FFE8D6;
+    color: #333333;
+    border-radius: 10px;
+}
+
+#modalCaption {
+    color: #66B2B2;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #FFE8D6;
+    color: #5c8f8f;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #5c8f8f;
+}
+
+/* Ensure consistent thumbnail sizes */
+.gallery-item img {
+    width: 300px;
+    height: 200px; /* Fixed thumbnail size */
+    object-fit: cover; /* Maintain aspect ratio while filling thumbnail */
+    border: 3px solid #5c8f8f;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-color: #66B2B2;
+}
+
+/* Modal image styling */
+#modalImage {
+    max-width: 100%;
+    max-height: 80vh; /* Prevent overflow from modal */
+    object-fit: contain; /* Preserve original aspect ratio */
+    margin: auto;
+    display: block;
+}
+
+/* Caption overlay styling */
+.caption-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+}
+
+.caption-overlay h5 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0;
+}
